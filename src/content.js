@@ -46,8 +46,8 @@ export const render = function (root, options, func) {
     domain.shift()
   }
   if (domain[0] !== 'com' || domain[1] !== 'github') {
-    btn.href = '#'
-    btn.target = '_self'
+    btn.href = options.href
+    btn.target = '_blank'
     func(widget)
     return
   }
